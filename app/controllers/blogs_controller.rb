@@ -1,6 +1,8 @@
 class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
+    p 
+    logger.debug
   end
 
   def show
